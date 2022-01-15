@@ -19,8 +19,16 @@
       create: yes
       validate: 'visudo -cf %s'
 
-  - name: Install neovim
+  - name: Install packages with Pacman
     community.general.pacman:
-      name: neovim
+      name:
+        - neovim
+        - keynav
       state: present
 
+  - name: Install AUR packages
+    kewlfft.aur.uar:
+      name:
+        - htop-vim
+    become: yes
+    become_user: aur_builder
