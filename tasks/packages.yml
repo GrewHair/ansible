@@ -13,3 +13,4 @@
   become_user: aur_builder
   with_items:
     - htop-vim
+    - kmonad-bin
