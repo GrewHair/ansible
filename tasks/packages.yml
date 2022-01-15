@@ -5,6 +5,7 @@
   with_items:
     - neovim
     - keynav
+    - evtest
 
 - name: Install AUR packages
   kewlfft.aur.aur:
