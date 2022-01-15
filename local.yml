@@ -27,7 +27,7 @@
       state: present
 
   - name: Install AUR packages
-    kewlfft.aur.uar:
+    kewlfft.aur.aur:
       name:
         - htop-vim
     become: yes
