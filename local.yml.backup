@@ -21,14 +21,16 @@
 
   - name: Install packages with Pacman
     community.general.pacman:
-      name:
-        - neovim
-        - keynav
+      name: "{{ item }}"
       state: present
+    with_items:
+      - neovim
+      - keynav
 
   - name: Install AUR packages
     kewlfft.aur.aur:
-      name:
-        - htop-vim
+      name: "{{ item }}"
     become: yes
     become_user: aur_builder
+    with_items:
+      - htop-vim
