@@ -1,0 +1,9 @@
+- name: copy unit files
+  copy:
+    src: "{{ item }}"
+    dest: /usr/lib/systemd/system/
+    owner: root
+    #mode: 600
+  with_fileglob:
+    - ../systemd-unit-files/*
+
