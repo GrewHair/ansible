@@ -15,4 +15,4 @@
   with_items:
     - htop-vim
     - kmonad-bin
-    - rofi-blezz
+      #- rofi-blezz
