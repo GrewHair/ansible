@@ -5,7 +5,6 @@ Requires=graphical.target
 [Service]
 ExecStart=/usr/bin/keynav
 Environment=DISPLAY=:0
-User=leo
 Restart=always
 
 [Install]
