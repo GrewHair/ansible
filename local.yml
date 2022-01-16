@@ -21,3 +21,4 @@
 
   tasks:
     - include: tasks/packages.yml
+    - include: tasks/vim-plug.yml
