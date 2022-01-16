@@ -15,4 +15,4 @@
     daemon_reload: yes
   with_items:
     - kmonad
-    - keynav
+    # - keynav  # doesn't work :( gotta dig more into the unit file.. maybe it's because of X

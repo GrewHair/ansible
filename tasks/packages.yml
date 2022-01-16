@@ -6,6 +6,8 @@
     - neovim
     - keynav
     - evtest
+    - tmux
+    - kitty
 
 - name: Install AUR packages
   kewlfft.aur.aur:
