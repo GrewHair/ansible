@@ -15,4 +15,5 @@
   with_items:
     - htop-vim
     - kmonad-bin
+    - xfdashboard
       #- rofi-blezz
