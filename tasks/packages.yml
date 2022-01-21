@@ -1,4 +1,4 @@
-pacman_packages:
+- pacman_packages:
   - neovim
   - keynav
   - evtest
