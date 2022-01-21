@@ -1,20 +1,13 @@
-pacman_packages:
-  - neovim
-  - keynav
-  - evtest
-  - tmux
-  - kitty
-
 - name: Install packages with Pacman
   community.general.pacman:
-    name: "{{ pacman_packages }}"
+    name: "{{ item }}"
     state: present
-      #with_items:
-      #  - neovim
-      #  - keynav
-      #  - evtest
-      #  - tmux
-      #  - kitty
+  with_items:
+    - neovim
+    - keynav
+    - evtest
+    - tmux
+    - kitty
 
 - name: Install AUR packages
   kewlfft.aur.aur:
