@@ -3,6 +3,8 @@
     name: "{{ item }}"
     state: present
   loop:
+    - xclip
+    - xsel
     - neovim
     - keynav
     - evtest
