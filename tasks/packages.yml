@@ -10,6 +10,7 @@
     - evtest
     - tmux
     - kitty
+    - python-pip
 
 - name: Install AUR packages
   kewlfft.aur.aur:
