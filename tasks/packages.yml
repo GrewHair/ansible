@@ -12,6 +12,7 @@
     - tmux
     - kitty
     - python-pip
+    - tree
 
 - name: Install AUR packages
   kewlfft.aur.aur:
