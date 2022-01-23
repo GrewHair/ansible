@@ -25,6 +25,10 @@
     # - rofi-blezz - the repo is dead, and it freezes ansible
     - neovide
 
+- name: Install virtualenv with pip
+  pip:
+    name: virtualenv
+
 - name: Install packages with pip
   pip:
     name: i3ipc
