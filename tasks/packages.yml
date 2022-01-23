@@ -24,3 +24,11 @@
     - xfdashboard  # it doesn't show thumbnails + is scoped to one workspace
     # - rofi-blezz - the repo is dead, and it freezes ansible
     - neovide
+
+- name: Install packages with pip
+  pip:
+    name: i3ipc
+    #requirements: requirements.txt
+    virtualenv: /home/boris/.config/i3/scripts/i3ipc-venv
+  become: yes
+  become_user: boris
