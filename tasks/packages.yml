@@ -25,7 +25,7 @@
     - xfdashboard  # it doesn't show thumbnails + is scoped to one workspace
     # - rofi-blezz - the repo is dead, and it freezes ansible
     - neovide
-    - mimic
+    - mimic  # this takes a long time
 
 - name: Install virtualenv with pip
   pip:
